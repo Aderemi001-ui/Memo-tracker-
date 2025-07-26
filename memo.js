@@ -21,7 +21,11 @@ li.className='memo-item'
             const deleteBtn=document.createElement('button')
             deleteBtn.className='delete-btn'
             deleteBtn.textContent='delete'
-
+ deleteBtn.style.border='none'
+            deleteBtn.style.borderRadius='10px'
+            deleteBtn.style.width='100px'
+             deleteBtn.style.height='40px'
+             deleteBtn.style.backgroundColor='red'
             deleteBtn.addEventListener('click',()=>deleteMemo(index))
             li.appendChild(memoContent)
             li.appendChild(deleteBtn)
